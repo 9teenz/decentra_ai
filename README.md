@@ -1,2 +1,2 @@
-# decentra_ai
+# Команда QuadCore
 
