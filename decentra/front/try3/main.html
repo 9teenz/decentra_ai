@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCC Bonus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="shortcut icon" href="images/icobcc.ico" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="media/fon.MP4" type="video/mp4">
+    </video>
+    
+    <!-- Контейнер для web push уведомлений -->
+    <div id="notificationContainer"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-text">BCC Bonus</div>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="number" id="searchInput" class="search-input" placeholder="Поиск по ID">
+                <button onclick="searchClient()" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="client-info">
+            <div class="client-header">
+                <div>
+                    <h1 class="client-name">ID: 37 | Айгерим</h1>
+                    <span class="client-status">Премиальный клиент</span>
+                </div>
+            </div>
+            
+            <div class="balance">5 618 675 ₸</div>
+            
+            <div class="client-details">
+                <div class="detail-item">
+                    <span class="detail-label">Возраст</span>
+                    <span  id="ageid" class="detail-value">54 года</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Город</span>
+                    <span id="city" class="detail-value">Астана</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Статус</span>
+                    <span class="detail-value">Активный</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Продукт</span>
+                    <span id="productid" class="detail-value">Карта для путешествий</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="offer">
+            <h2 class="offer-title">Персональное предложение</h2>
+            <p id="offertext" class="offer-text">Вы потратили 1 061 918 ₸ на кафе и рестораны. С нашей картой вернули бы часть в виде кешбэка. Оформите карту прямо сейчас.</p>
+            
+            <div class="notification" id="showNotification">
+                <i class="fas fa-bell"></i>
+                <span>Показать уведомление</span>
+            </div>
+        </div>
+        
+        <div class="categories">
+            <h2 class="section-title"><i class="fas fa-chart-pie"></i> Топ категорий</h2>
+            
+            <table class="category-table">
+                <thead>
+                    <tr>
+                        <th>Категории</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td id="top1">Кафе и рестораны</td></tr>
+                    <tr><td id="top2">Продукты питания</td></tr>
+                    <tr><td id="top3">Такси</td><td></tr>
+                    <tr><td id="top4">АЗС</td><td></tr>
+                    <tr><td id="top5">Играем дома</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div><img class="QC" width="50" src="images/QuadCore2.png" alt=""></div>
+        <p>© 2025 BCC Bonus. Все права защищены.</p>
+        <div class="team"><p>Разработано командой "QuadCore"</p></div>
+    </footer>
+
+
+</body>
+</html>
